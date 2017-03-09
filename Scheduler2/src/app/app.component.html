@@ -1,0 +1,29 @@
+<header>
+  <p>My Scheduler</p>
+</header>
+
+<nav>
+  <ul>
+    <a routerLink="/profile" routerLinkActive="active">
+      <li>My Profile</li>
+    </a>
+    <a routerLink="/edit-subject" routerLinkActive="active">
+      <li>My Subjects</li>
+    </a>
+    <a routerLink="/edit-task" routerLinkActive="active">
+      <li>My Tasks</li>
+    </a>
+  </ul>
+</nav>
+
+<aside>
+  <!--Sidebar menu here-->
+  <router-outlet></router-outlet>
+</aside>
+
+<main>
+  <!--Schedule here-->
+  <app-schedule-view></app-schedule-view>
+</main>
+
+<footer>2017</footer>
