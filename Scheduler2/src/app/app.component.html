@@ -4,20 +4,21 @@
 
 <nav>
   <ul>
-    <a>
+    <a routerLink="/profile" routerLinkActive="active">
       <li>My Profile</li>
     </a>
-    <a>
+    <a routerLink="/edit-subject" routerLinkActive="active">
       <li>My Subjects</li>
     </a>
-    <a>
-      <li>My Schedule</li>
+    <a routerLink="/edit-task" routerLinkActive="active">
+      <li>My Tasks</li>
     </a>
   </ul>
 </nav>
 
 <aside>
   <!--Sidebar menu here-->
+  <router-outlet></router-outlet>
 </aside>
 
 <main>

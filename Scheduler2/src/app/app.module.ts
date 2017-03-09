@@ -12,6 +12,16 @@ import { EditSubjectComponent } from './edit-subject/edit-subject.component';
 import { NewTaskComponent } from './new-task/new-task.component';
 import { EditTaskComponent } from './edit-task/edit-task.component';
 
+import { RouterModule, Routes } from '@angular/router';
+
+const appRoutes: Routes = [
+  { path: 'profile', component: ProfileViewComponent },
+  { path: 'new-subject', component: NewSubjectComponent },
+  { path: 'edit-subject', component: EditSubjectComponent },
+  { path: 'new-task', component: NewTaskComponent },
+  { path: 'edit-task', component: EditTaskComponent }
+];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +34,7 @@ import { EditTaskComponent } from './edit-task/edit-task.component';
     EditTaskComponent
   ],
   imports: [
+    RouterModule.forRoot(appRoutes),
     BrowserModule,
     FormsModule,
     HttpModule
