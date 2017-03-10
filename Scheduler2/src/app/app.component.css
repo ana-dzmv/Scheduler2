@@ -82,22 +82,31 @@ nav ul li:hover {
     font-weight: bold;
 }
 
-aside {
-    width: 35%;
-}
 
-main {
-    width: 40%;
-}
-
-aside, main {
+/*Aside Styling*/
+main, aside{
     display: inline-block;
+    margin-top: 5px;
+    height: 650px;
+    overflow: hidden;
 }
 
+aside{
+    width: 420px;
+    min-width: 120px;
+    /*background-color: red;*/
+}
+
+main{
+    width: 700px;
+    min-width: 500px;
+    /*background-color: blue;*/
+}
 
 /*Footer Styling*/
 
 footer {
+    display: block;
     background-color: lightseagreen;
     height: 80px;
     text-align: center;
