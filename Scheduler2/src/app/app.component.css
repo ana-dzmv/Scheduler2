@@ -41,7 +41,6 @@ nav ul {
     display: inline-block;
     text-align: center;
     margin: 0 auto;
-    
 }
 
 nav a {
@@ -61,30 +60,25 @@ nav ul li {
     margin: 0 auto;
 }
 
-.table
-{
+.table {
     display: table;
     margin: 0 auto;
 }
 
-#myProfile-link:hover
-{
+#myProfile-link:hover {
     background-color: maroon;
 }
 
-#mySubjects-link:hover
-{
+#mySubjects-link:hover {
     background-color: slateblue;
 }
 
-#myTasks-link:hover
-{
+#myTasks-link:hover {
     background-color: steelblue;
 }
 
-nav ul li:hover
-{
-    color:white;
+nav ul li:hover {
+    color: white;
     font-weight: bold;
 }
 
@@ -98,4 +92,25 @@ main {
 
 aside, main {
     display: inline-block;
+}
+
+
+/*Footer Styling*/
+
+footer {
+    background-color: lightseagreen;
+    height: 80px;
+    text-align: center;
+    color: darkslategray;
+    font-size: 15px;
+    font-style: italic;
+    padding-top: 25px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
 }
