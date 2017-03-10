@@ -2,6 +2,7 @@
     border: 0;
     margin: 0;
     padding: 0;
+    font-family: "Myriad Pro", Helvetica, Arial, "Times New Roman", sans-serif;
 }
 
 header, footer, nav {
@@ -18,7 +19,6 @@ header {
 }
 
 header p {
-    font-family: "Myriad Pro", Helvetica, Arial, "Times New Roman", sans-serif;
     font-size: 25px;
     font-weight: bold;
     color: white;
@@ -27,14 +27,65 @@ header p {
     overflow: hidden;
 }
 
+
+/*Nav Styling*/
+
+nav {
+    background-color: lightgrey;
+    height: 50px;
+}
+
 nav ul {
+    overflow: hidden;
     list-style-type: none;
-    display: inline;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: darkslategray;
 }
 
 nav ul li {
     display: inline;
     overflow: hidden;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    padding: 15px 40px;
+    color: darkslategray;
+    float: left;
+    margin: 0 auto;
+}
+
+.table
+{
+    display: table;
+    margin: 0 auto;
+}
+
+#myProfile-link:hover
+{
+    background-color: maroon;
+}
+
+#mySubjects-link:hover
+{
+    background-color: slateblue;
+}
+
+#myTasks-link:hover
+{
+    background-color: steelblue;
+}
+
+nav ul li:hover
+{
+    color:white;
+    font-weight: bold;
 }
 
 aside {
