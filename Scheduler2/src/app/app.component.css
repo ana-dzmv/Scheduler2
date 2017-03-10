@@ -1,0 +1,50 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer, nav {
+    width: 100%;
+}
+
+
+/*Header Styling*/
+
+header {
+    height: 65px;
+    background-color: darkslategrey;
+    padding-top: 25px;
+}
+
+header p {
+    font-family: "Myriad Pro", Helvetica, Arial, "Times New Roman", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 5px auto;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline;
+}
+
+nav ul li {
+    display: inline;
+    overflow: hidden;
+}
+
+aside {
+    width: 35%;
+}
+
+main {
+    width: 40%;
+}
+
+aside, main {
+    display: inline-block;
+}
