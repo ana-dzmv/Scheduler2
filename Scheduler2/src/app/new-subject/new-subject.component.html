@@ -1,3 +1,30 @@
-<p>
-  new-subject works!
-</p>
+<section class="new-subject-form">
+  <header>
+    <h3>Add New Subject</h3>
+  </header>
+
+  <section class="form-img"></section>
+
+  <section class="new-subject-section">
+    <h4>New Subject:</h4>
+    <!--New Subject Form-->
+    <form>
+      <label><span>Name: </span><input name="name" type="text" required></label>
+      <label><span>Days: <br></span>
+      <div id="checkbox-days">
+        <input name="days" type="checkbox" value="sunday">Sunday<br>
+        <input name="days" type="checkbox" value="monday">Monday<br>
+        <input name="days" type="checkbox" value="tuesday">Tuesday<br>
+        <input name="days" type="checkbox" value="wednesday">Wednesday<br>
+        <input name="days" type="checkbox" value="thursday">Thursday<br>
+        <input name="days" type="checkbox" value="friday">Friday<br>
+        <input name="days" type="checkbox" value="saturday">Saturday<br>
+      </div>
+      </label>
+      <label><span>Color code: </span><input name="color" type="color" required></label>
+      <a routerLink="/edit-task" routerLinkActive="active"><input type="submit" value="Add Subject"></a>
+    </form>
+    <a routerLink="/new-task" routerLinkActive="active">
+      <button type="button" class="add-button">Add Task</button></a>
+  </section>
+</section>
