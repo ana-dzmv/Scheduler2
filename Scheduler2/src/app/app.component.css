@@ -86,8 +86,8 @@ nav ul li:hover {
 /*Aside Styling*/
 main, aside{
     display: inline-block;
-    margin-top: 5px;
-    height: 650px;
+    margin: 30px auto;
+    height: 800px;
     overflow: hidden;
 }
 
