@@ -12,20 +12,22 @@ import { EditSubjectComponent } from './edit-subject/edit-subject.component';
 import { NewTaskComponent } from './new-task/new-task.component';
 import { EditTaskComponent } from './edit-task/edit-task.component';
 
-
-import { LoginFormComponent } from './login-form/login-form.component';
+// import { LoginFormComponent } from './login-form/login-form.component';
 
 import { UserProfileService } from './userProfile.service';
+import { SubjectService } from './subject.service';
+import { TaskService } from './task.service';
+
 import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes = [
-  {path: 'index', component: ProfileViewComponent },
+  { path: 'index', component: ProfileViewComponent },
   { path: 'profile', component: ProfileViewComponent },
   { path: 'new-subject', component: NewSubjectComponent },
-  { path: 'edit-subject', component: EditSubjectComponent },
+  { path: 'edit-subject/:id', component: EditSubjectComponent },
   { path: 'new-task', component: NewTaskComponent },
   { path: 'edit-task', component: EditTaskComponent },
-   { path: '', redirectTo: '/index', pathMatch: 'full' }
+  { path: '', redirectTo: '/profile', pathMatch: 'full' }
 ];
 @NgModule({
   declarations: [
@@ -37,7 +39,7 @@ const appRoutes: Routes = [
     EditSubjectComponent,
     NewTaskComponent,
     EditTaskComponent,
-    LoginFormComponent
+    // LoginFormComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
@@ -45,7 +47,7 @@ const appRoutes: Routes = [
     FormsModule,
     HttpModule
   ],
-  providers: [UserProfileService],
+  providers: [UserProfileService, SubjectService, TaskService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

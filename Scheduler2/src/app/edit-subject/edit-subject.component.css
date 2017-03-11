@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    border: 0;
+    border: 0;
+}
+
+.new-subject-form {
+    height: 800px;
+    background-color: darkgrey;
+    padding: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*Header Styling*/
+
+header {
+    text-align: center;
+}
+
+header h3 {
+    background-color: blueviolet;
+    color: white;
+    padding: 15px 0;
+    font-weight: normal;
+}
+
+
+/*Section Image*/
+
+.form-img {
+    height: 210px;
+    background: #000 url("/src/assets/images/study3.jpg") no-repeat right top;
+    background-size: cover;
+}
+
+
+/*New Subject Info Styling*/
+
+.new-subject-section {
+    margin: 0 auto 30px auto;
+}
+
+.new-subject-section h4 {
+    background-color: indigo;
+    color: white;
+    padding: 15px 0;
+    font-weight: normal;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+form label {
+    list-style-type: none;
+    margin: 25px 35px;
+    color: darkslategray;
+    font-weight: bold;
+    display: block;
+}
+
+input {
+    padding: 5px 10px;
+    width: 80px;
+    float: right;
+}
+
+#checkbox-days {
+    padding: 20px 0 0px 18px;
+    font-weight: light;
+    color: gray;
+}
+
+span {
+    color: darkslategray;
+}
+
+
+/*Button Styling*/
+
+.add-button, input[type="submit"] {
+    padding: 10px 25px;
+    width: 135px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: light;
+    color: white;
+    background-color: brown;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    float: none;
+    margin-top: 60px;
+    background-color: indigo;
+    font-weight: bold;
+}

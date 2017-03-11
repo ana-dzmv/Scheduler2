@@ -1,3 +1,30 @@
-<p>
-  edit-subject works!
-</p>
+<section class="new-subject-form">
+  <header>
+    <h3>Edit Subject</h3>
+  </header>
+
+  <section class="form-img"></section>
+
+  <section class="new-subject-section">
+    <h4>Edit Subject:</h4>
+    <!--Edit Subject Form-->
+    <form (submit)="submitSubject()">
+      <label><span>Name: </span><input [(ngModel)]="subject.name" name="name" type="text" required></label>
+      <label><span>Days: <br></span>
+      <div id="checkbox-days">
+        <input [(ngModel)]="subject.isSun" name="days" type="checkbox" value="sunday">Sunday<br>
+        <input [(ngModel)]="subject.isMon" name="days" type="checkbox" value="monday">Monday<br>
+        <input [(ngModel)]="subject.isTue" name="days" type="checkbox" value="tuesday">Tuesday<br>
+        <input [(ngModel)]="subject.isWed" name="days" type="checkbox" value="wednesday">Wednesday<br>
+        <input [(ngModel)]="subject.isThu" name="days" type="checkbox" value="thursday">Thursday<br>
+        <input [(ngModel)]="subject.isFri" name="days" type="checkbox" value="friday">Friday<br>
+        <input [(ngModel)]="subject.isSat" name="days" type="checkbox" value="saturday">Saturday<br>
+      </div>
+      </label>
+      <label><span>Color code: </span><input [(ngModel)]="subject.color" name="color" type="color" required></label>
+      <a routerLink="/edit-subject" routerLinkActive="active"><input type="submit" value="Add Subject"></a>
+    </form>
+    <a routerLink="/new-task" routerLinkActive="active">
+      <button type="button" class="add-button">Add Task</button></a>
+  </section>
+</section>
