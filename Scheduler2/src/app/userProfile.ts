@@ -1,6 +1,6 @@
-export class userProfile
+export class UserProfile
 {
     name: string;
-    workdays: number[];
-    photo_src: string;
+    workdays: number;
+    photoSrc: string;
 }
