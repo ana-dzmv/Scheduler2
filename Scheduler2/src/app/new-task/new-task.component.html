@@ -1,3 +1,42 @@
-<p>
-  new-task works!
-</p>
+<section class="new-task-form">
+  <header>
+    <h3>Add New Task</h3>
+  </header>
+
+  <section class="form-img"></section>
+
+  <section class="new-task-section">
+    <h4>New Task:</h4>
+    <!--New Task Form-->
+    <form>
+      <label><span>Title: </span><input name="title" type="text" required></label>
+      <label><span>Subject: </span><input list="subject-select">
+        <datalist id="subject-select">
+          <option value="Subject1">
+          <option value="Subject2">
+          <option value="Subject3">
+          <option value="Subject4">
+          <option value="Subject5">
+        </datalist>
+      </label>
+      <label><span>Days: <br></span>
+      <div id="checkbox-days">
+        <input name="days" type="checkbox" value="sunday">Sunday<br>
+        <input name="days" type="checkbox" value="monday">Monday<br>
+        <input name="days" type="checkbox" value="tuesday">Tuesday<br>
+        <input name="days" type="checkbox" value="wednesday">Wednesday<br>
+        <input name="days" type="checkbox" value="thursday">Thursday<br>
+        <input name="days" type="checkbox" value="friday">Friday<br>
+        <input name="days" type="checkbox" value="saturday">Saturday<br>
+      </div></label>
+      <label><span>What time?</span>
+        <input id="start-time" name="time" type="time" value="08:00:00" step="600" required>
+        to
+        <input id="end-time" name="time" type="time" value="09:00:00" step="600" required>
+      </label>
+
+      <a routerLink="/edit-task" routerLinkActive="active">
+        <button type="button" class="add-button">Add Task</button></a>
+    </form>
+  </section>
+</section>
