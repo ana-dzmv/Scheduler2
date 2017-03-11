@@ -19,13 +19,13 @@ import { UserProfileService } from './userProfile.service';
 import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes = [
-  {path: 'index', component: AppComponent },
+  {path: 'index', component: ProfileViewComponent },
   { path: 'profile', component: ProfileViewComponent },
   { path: 'new-subject', component: NewSubjectComponent },
   { path: 'edit-subject', component: EditSubjectComponent },
   { path: 'new-task', component: NewTaskComponent },
   { path: 'edit-task', component: EditTaskComponent },
-  { path: '', redirectTo: '/index', pathMatch: 'full' }
+   { path: '', redirectTo: '/index', pathMatch: 'full' }
 ];
 @NgModule({
   declarations: [
