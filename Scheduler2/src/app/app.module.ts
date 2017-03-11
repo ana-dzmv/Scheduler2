@@ -13,6 +13,7 @@ import { NewTaskComponent } from './new-task/new-task.component';
 import { EditTaskComponent } from './edit-task/edit-task.component';
 
 import { RouterModule, Routes } from '@angular/router';
+import { LoginFormComponent } from './login-form/login-form.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/index', pathMatch: 'full' },
@@ -32,7 +33,8 @@ const appRoutes: Routes = [
     NewSubjectComponent,
     EditSubjectComponent,
     NewTaskComponent,
-    EditTaskComponent
+    EditTaskComponent,
+    LoginFormComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
