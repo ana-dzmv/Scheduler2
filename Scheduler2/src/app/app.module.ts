@@ -15,6 +15,7 @@ import { EditTaskComponent } from './edit-task/edit-task.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes = [
+  { path: '', redirectTo: '/index', pathMatch: 'full' },
   { path: 'profile', component: ProfileViewComponent },
   { path: 'new-subject', component: NewSubjectComponent },
   { path: 'edit-subject', component: EditSubjectComponent },
