@@ -21,7 +21,7 @@ import { TaskService } from './task.service';
 import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes = [
-  { path: 'index', component: ProfileViewComponent },
+  { path: 'index', component: EditSubjectComponent },
   { path: 'profile', component: ProfileViewComponent },
   { path: 'new-subject', component: NewSubjectComponent },
   { path: 'edit-subject/:id', component: EditSubjectComponent },
