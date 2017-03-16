@@ -16,7 +16,7 @@ export class EditSubjectComponent implements OnInit {
   constructor(private route: ActivatedRoute, private subjectService: SubjectService) { }
 
   ngOnInit() {
-    this.route.params.subscribe(p=> this.subject = this.subjectService.get(p['id']));
+    this.route.params.subscribe(p => this.subject = this.subjectService.get(p['_id']));
   }
 
 }

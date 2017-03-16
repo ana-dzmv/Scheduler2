@@ -24,7 +24,7 @@ const appRoutes: Routes = [
   { path: 'index', component: EditSubjectComponent },
   { path: 'profile', component: ProfileViewComponent },
   { path: 'new-subject', component: NewSubjectComponent },
-  { path: 'edit-subject/:id', component: EditSubjectComponent },
+  { path: 'edit-subject/:_id', component: EditSubjectComponent },
   { path: 'new-task', component: NewTaskComponent },
   { path: 'edit-task', component: EditTaskComponent },
   { path: '', redirectTo: '/profile', pathMatch: 'full' }

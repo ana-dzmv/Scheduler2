@@ -18,7 +18,8 @@ export class NewSubjectComponent implements OnInit {
   ngOnInit() {
   }
   
-  submitSubject() {
+  submitSubject(e) {
+    e.prevantDefault();
     this.subjectService.addSubject(this.subject);
     this.subject = new Subject();
     this.router.navigate(['index']);
