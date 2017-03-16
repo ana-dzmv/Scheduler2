@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Subject } from '../subject';
+import { SubjectService } from '../subject.service';
+
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-edit-subject',
@@ -7,9 +11,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditSubjectComponent implements OnInit {
 
-  constructor() { }
+  subject: Subject = new Subject();
+
+  constructor(private route: ActivatedRoute, private subjectService: SubjectService) { }
 
   ngOnInit() {
+    this.route.params.subscribe(p => this.subject = this.subjectService.get(p['_id']));
   }
 
 }

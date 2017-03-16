@@ -1,3 +1,31 @@
-<p>
-  profile-view works!
-</p>
+<section class="profile-form">
+  <header>
+    <h2>Welcome <span id="user-name">{{userProfile.name}}</span>!</h2>
+    <img src="/src/assets/images/av.jpg" class="profile-photo">
+  </header>
+
+  <section class="profile-section" id="profile-subjects">
+    <h3>Your <b>Subjects</b>:</h3>
+    <!--Subjects-->
+    <ul>
+      <li>Subject</li>
+      <li>Subject</li>
+      <li>Subject</li>
+      <li>Subject</li>
+    </ul>
+    <a routerLink="/new-subject" routerLinkActive="active">
+      <button type="button" class="add-button">Add Subject</button></a>
+  </section>
+  <section class="profile-section" id="profile-tasks">
+    <h3>Your <b>Upcoming Tasks</b>:</h3>
+    <!--Tasks-->
+    <ul>
+      <li>Task</li>
+      <li>Task</li>
+      <li>Task</li>
+      <li>Task</li>
+    </ul>
+    <a routerLink="/new-task" routerLinkActive="active">
+      <button type="button" class="add-button">Add Task</button></a>
+  </section>
+</section>

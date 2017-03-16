@@ -3,27 +3,35 @@
 </header>
 
 <nav>
-  <ul>
-    <a routerLink="/profile" routerLinkActive="active">
-      <li>My Profile</li>
-    </a>
-    <a routerLink="/edit-subject" routerLinkActive="active">
-      <li>My Subjects</li>
-    </a>
-    <a routerLink="/edit-task" routerLinkActive="active">
-      <li>My Tasks</li>
-    </a>
-  </ul>
+  <div class="table">
+    <ul>
+      <a routerLink="/profile" routerLinkActive="active">
+        <li id="myProfile-link">My Profile</li>
+      </a>
+      <a routerLink="/new-subject" routerLinkActive="active">
+        <li id="mySubjects-link">Manage Subjects</li>
+      </a>
+      <a routerLink="/new-task" routerLinkActive="active">
+        <li id="myTasks-link">Manage Tasks</li>
+      </a>
+    </ul>
+  </div>
 </nav>
 
-<aside>
-  <!--Sidebar menu here-->
-  <router-outlet></router-outlet>
-</aside>
+<section class="table">
+  <aside>
+    <!--Sidebar menus here-->
+    <router-outlet></router-outlet>
+  </aside>
 
-<main>
-  <!--Schedule here-->
-  <app-schedule-view></app-schedule-view>
-</main>
+  <main>
+    <!--Schedule here-->
+    <app-schedule-view></app-schedule-view>
+  </main>
+</section>
 
-<footer>2017</footer>
+<footer>
+  <p><b>"My Scheduler"</b>, 2017</p>
+  <p>(Mini-Project Application)</p>
+  <p><a href="https://github.com/ana-dzmv">ana-dzmv</a> on GitHub</p>
+</footer>

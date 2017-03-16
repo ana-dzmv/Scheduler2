@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    border: 0;
+    border: 0;
+}
+
+.profile-form {
+    height: 800px;
+    background-color: darkseagreen;
+    padding: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*Header Styling*/
+
+header {
+    text-align: center;
+}
+
+header h2 {
+    background-color: seagreen;
+    color: white;
+    padding: 15px 0;
+    font-weight: normal;
+}
+
+#user-name {
+    font-weight: bold;
+}
+
+
+/*Profile Photo*/
+
+img {
+    width: 100%;
+}
+
+.profile-photo {
+    width: 120px;
+    border: 5px solid white;
+    border-radius: 100%;
+    margin: 25px auto 10px auto;
+}
+
+
+/*Profile Content Styling*/
+
+.profile-section {
+    margin: 10px auto 30px auto;
+}
+
+.profile-section h3 {
+    background-color: mediumseagreen;
+    color: white;
+    padding: 15px 0;
+    font-weight: normal;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.profile-section ul {
+    list-style-type: none;
+    margin: 25px auto;
+    color: darkslategray;
+    font-weight: bold;
+}
+
+.profile-section ul li {
+    margin: 8px;
+}
+
+.add-button {
+    padding: 10px 25px;
+    width: 135px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: brown;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}

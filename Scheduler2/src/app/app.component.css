@@ -1,0 +1,125 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: "Myriad Pro", Helvetica, Arial, "Times New Roman", sans-serif;
+}
+
+header, footer, nav {
+    width: 100%;
+}
+
+
+/*Header Styling*/
+
+header {
+    height: 65px;
+    background-color: darkcyan;
+    padding-top: 25px;
+}
+
+header p {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 5px auto;
+    overflow: hidden;
+}
+
+
+/*Nav Styling*/
+
+nav {
+    background-color: lightgrey;
+    height: 50px;
+}
+
+nav ul {
+    overflow: hidden;
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: darkslategray;
+}
+
+nav ul li {
+    display: inline;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    padding: 15px 40px;
+    color: darkslategray;
+    float: left;
+    margin: 0 auto;
+}
+
+.table {
+    display: table;
+    margin: 0 auto;
+}
+
+#myProfile-link:hover {
+    background-color: maroon;
+}
+
+#mySubjects-link:hover {
+    background-color: slateblue;
+}
+
+#myTasks-link:hover {
+    background-color: steelblue;
+}
+
+nav ul li:hover {
+    color: white;
+    font-weight: bold;
+}
+
+
+/*Aside Styling*/
+main, aside{
+    display: inline-block;
+    margin: 30px auto;
+    height: 800px;
+    overflow: hidden;
+}
+
+aside{
+    width: 420px;
+    min-width: 120px;
+    /*background-color: red;*/
+}
+
+main{
+    width: 700px;
+    min-width: 500px;
+    /*background-color: blue;*/
+}
+
+/*Footer Styling*/
+
+footer {
+    display: block;
+    background-color: lightseagreen;
+    height: 80px;
+    text-align: center;
+    color: darkslategray;
+    font-size: 15px;
+    font-style: italic;
+    padding-top: 25px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
