@@ -92,13 +92,13 @@ main, aside{
 }
 
 aside{
-    width: 420px;
+    width: 300px;
     min-width: 120px;
     /*background-color: red;*/
 }
 
 main{
-    width: 700px;
+    width: 800px;
     min-width: 500px;
     /*background-color: blue;*/
 }
