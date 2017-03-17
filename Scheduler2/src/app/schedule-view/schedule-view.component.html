@@ -1,18 +1,15 @@
-
-  <table>
-    <thead>
-      <tr>
-        <td>Sunday</td>
-        <td>Monday</td>
-        <td>Tuesday</td>
-        <td>Wednesday</td>
-        <td>Thursday</td>
-        <td>Friday</td>
-        <td>Saturday</td>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ng>
-      </tr>
-    </tbody>
-  </table>
+<table id="schedule-table">
+  <thead>
+    <tr>
+      <td id="table-units">D/T</td>
+      <td *ngFor="let time of time_starts">{{time}}</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let day of weekdays" id="{{day}}">
+      <td class="days">{{day}}</td>
+      <td *ngFor="let slots of time_slots" class="gap">G A P</td>
+    </tr>
+  </tbody>
+</table>
+<button (click)="locateSubjects()">Add Subjects to Schedule View</button>

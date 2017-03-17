@@ -1,14 +1,11 @@
 export class Subject {
     name: string;
-    days: number;
     color: string;
     id: number;
+    start_time: string;
+    end_time: string;
+    slots_taken_count: number;
+    slots_taken: number[] = [];
 
-    isSun: boolean;
-    isMon: boolean;
-    isTue: boolean;
-    isWed: boolean;
-    isThu: boolean;
-    isFri: boolean;
-    isSat: boolean;
+    isDay: boolean[] = [];
 }

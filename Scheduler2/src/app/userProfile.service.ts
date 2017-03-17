@@ -9,7 +9,8 @@ export class UserProfileService {
   constructor() {
   }
 
-  addProfile(profile: UserProfile): void{
+  setProfile(profile: UserProfile): void {
+    profile = new UserProfile("Anastasia", 5);
     this.profiles.push(profile);
   }
 

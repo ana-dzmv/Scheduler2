@@ -1,0 +1,75 @@
+/*Schedule/Table Styling*/
+
+table {
+    margin: 50px 20px;
+    text-align: center;
+    border-spacing: 8px 6px;
+    width: 88%;
+}
+
+thead {
+    font-weight: bold;
+    font-size: 18px;
+    background-color: dodgerblue;
+    color: white;
+}
+
+td {
+    padding: 15px 12px;
+}
+
+thead td {
+    border-radius: 3px;
+    padding: 10px 10px;
+}
+
+#table-units {
+    background-color: darkcyan;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.days {
+    background-color: darkslategray;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*Gaps and Subject Styling*/
+
+.gap {
+    background-color: lightgrey;
+    border: 1px solid lightgray;
+    color: white;
+}
+
+.subject {
+    background-color: crimson;
+    color: pink;
+}
+
+.subject:hover {
+    text-decoration: underline;
+}
+
+.gap, .subject {
+    border-radius: 5px;
+}
+
+
+/*Button Styling*/
+
+button {
+    padding: 13px 0;
+    width: 300px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: brown;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
