@@ -2,16 +2,10 @@
   <thead>
     <tr>
       <td id="table-units">D/T</td>
-      <td>08:00</td>
-      <td>09:00</td>
-      <td>10:00</td>
-      <td>11:00</td>
-      <td>12:00</td>
-      <td>13:00</td>
-      <td>14:00</td>
+      <td *ngFor="let time of time_starts">{{time}}</td>
     </tr>
   </thead>
-  <tbody>
+  <!--<tbody>
     <tr>
       <td class="days">Sun</td>
       <td class="subject">Subject 1</td>
@@ -81,6 +75,12 @@
       <td class="gap">G A P</td>
       <td class="subject">Subject2</td>
       <td class="subject">Subject4</td>
+    </tr>
+  </tbody>-->
+  <tbody>
+    <tr *ngFor="let day of weekdays">
+      <td class="days">{{day}}</td>
+      <td *ngFor="let slots of time_slots" class="gap">G A P</td>
     </tr>
   </tbody>
 </table>
