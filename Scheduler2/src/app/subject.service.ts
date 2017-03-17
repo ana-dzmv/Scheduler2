@@ -5,7 +5,7 @@ import { Subject } from './subject';
 export class SubjectService {
 
   subjects: Subject[] = [];
-  _id: number = 0;
+  private _id: number = 0;
 
   constructor() { }
 

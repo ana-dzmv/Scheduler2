@@ -21,13 +21,13 @@ import { TaskService } from './task.service';
 import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes = [
-  { path: 'index', component: EditSubjectComponent },
+  { path: 'index', component: ProfileViewComponent },
   { path: 'profile', component: ProfileViewComponent },
   { path: 'new-subject', component: NewSubjectComponent },
-  { path: 'edit-subject/:_id', component: EditSubjectComponent },
+  // { path: 'edit-subject/:_id', component: EditSubjectComponent },
   { path: 'new-task', component: NewTaskComponent },
   { path: 'edit-task', component: EditTaskComponent },
-  { path: '', redirectTo: '/profile', pathMatch: 'full' }
+  { path: '', redirectTo: '/index', pathMatch: 'full' }
 ];
 @NgModule({
   declarations: [
