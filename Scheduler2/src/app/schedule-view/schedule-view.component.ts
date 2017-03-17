@@ -40,4 +40,24 @@ export class ScheduleViewComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  changeToSubject() {
+    for (var m = 0; m < this.workdays_N; m++) {
+      var r = document.getElementById(this.weekdays[m].toString());
+      for (var i = 1; i < this.time_slots.length + 1; i++) {
+        var d = r.getElementsByTagName("td")[i];
+        for (var j = 0; j < this.subjects.length; j++) {
+          if (this.subjects[j].isDay[m] == true) {
+            d.className += " subject";
+            d.innerHTML = this.subjects[j].name;
+            d.style.backgroundColor = this.subjects[j].color;
+          }
+        }
+      }
+
+    }
+    // var t = document.getElementById("table"),
+    // d = t.getElementsByTagName("tr")[0],
+    // r = d.getElementsByTagName("td")[0];
+  }
 }

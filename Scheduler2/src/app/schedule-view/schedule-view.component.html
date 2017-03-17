@@ -1,4 +1,4 @@
-<table>
+<table id="schedule-table">
   <thead>
     <tr>
       <td id="table-units">D/T</td>
@@ -78,12 +78,13 @@
     </tr>
   </tbody>-->
   <tbody>
-    <tr *ngFor="let day of weekdays">
+    <tr *ngFor="let day of weekdays" id="{{day}}">
       <td class="days">{{day}}</td>
       <td *ngFor="let slots of time_slots" class="gap">G A P</td>
     </tr>
   </tbody>
 </table>
+<button (click)="changeToSubject()">Press here</button>
 
 <!--<ul>
   <li *ngFor="let s of subjects">{{s.color}}</li>
