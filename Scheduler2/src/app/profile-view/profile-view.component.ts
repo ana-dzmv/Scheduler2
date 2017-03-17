@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { UserProfileService } from '../userProfile.service';
 import { UserProfile } from '../userProfile';
+import { SubjectService } from '../subject.service';
+import { Subject } from '../subject';
 
 import { Router } from '@angular/router';
 
@@ -10,11 +12,21 @@ import { Router } from '@angular/router';
   styleUrls: ['./profile-view.component.css']
 })
 export class ProfileViewComponent implements OnInit {
-  userProfile = new UserProfile("Anastasia", 7);
+  userProfiles: UserProfile[];
 
-  constructor(private router: Router, private userProfileService: UserProfileService) { }
+  // Subject information
+  subjects: Subject[];
+
+  constructor(private router: Router, private UserProfileService: UserProfileService, private SubjectService: SubjectService) {
+    this.userProfiles = this.UserProfileService.profiles;
+    this.subjects = this.SubjectService.subjects;
+  }
 
   ngOnInit() {
+  }
+
+  deleteTask(subject: Subject){
+    this.SubjectService.deleteSubject(subject);
   }
 
 }

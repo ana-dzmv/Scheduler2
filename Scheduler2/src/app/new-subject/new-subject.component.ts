@@ -17,12 +17,11 @@ export class NewSubjectComponent implements OnInit {
 
   ngOnInit() {
   }
-  
+
   submitSubject() {
     this.subjectService.addSubject(this.subject);
     this.subject = new Subject();
-    this.router.navigate(['index']);
+    this.router.navigate(['new-subject']);
   }
-
 
 }

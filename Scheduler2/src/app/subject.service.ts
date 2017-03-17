@@ -11,7 +11,14 @@ export class SubjectService {
 
   get(id: number): Subject {
     for (const s of this.subjects) {
-      if (s.id == id) return s; // return a specified task if its id is matched
+      if (s.id == id) return s;
+    }
+  }
+
+  deleteSubject(subject: Subject): void {
+    const ind = this.subjects.indexOf(subject);
+    if (ind >= 0) {
+      this.subjects.splice(ind, 1);
     }
   }
 

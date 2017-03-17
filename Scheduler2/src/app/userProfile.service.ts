@@ -4,13 +4,14 @@ import { UserProfile } from './userProfile';
 @Injectable()
 export class UserProfileService {
 
-  profile: UserProfile = new UserProfile("Ana", 7);
+  profiles: UserProfile[] = [];
 
   constructor() {
   }
 
-  addProfile(profile: UserProfile): void {
-    this.profile = profile;
+  setProfile(profile: UserProfile): void {
+    profile = new UserProfile("Anastasia", 5);
+    this.profiles.push(profile);
   }
 
 }

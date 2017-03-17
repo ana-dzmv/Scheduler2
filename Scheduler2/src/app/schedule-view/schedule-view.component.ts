@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { SubjectService } from '../subject.service';
 import { Subject } from '../subject';
 
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-schedule-view',
   templateUrl: './schedule-view.component.html',
@@ -48,8 +50,7 @@ export class ScheduleViewComponent implements OnInit {
         var d = r.getElementsByTagName("td")[i];
         for (var j = 0; j < this.subjects.length; j++) {
           if (this.subjects[j].isDay[m] == true) {
-            for (var k = 0; k < this.subjects[j].slots_taken_count; k++)
-            {
+            for (var k = 0; k < this.subjects[j].slots_taken_count; k++) {
               if (i == this.subjects[j].slots_taken[k]) {
                 d.className += " subject";
                 d.innerHTML = this.subjects[j].name;
