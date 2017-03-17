@@ -22,9 +22,12 @@
       </div>
       </label>
       <label><span>Color code: </span><input [(ngModel)]="subject.color" name="color" type="color" required></label>
+      <label id="times"><span>What time?</span>
+        <input [(ngModel)]="subject.start_time" name="times" type="time" value="08:00:00" step="600" required>
+        <p>to</p>
+        <input [(ngModel)]="subject.end_time" name="times" type="time" value="09:00:00" step="600" required>
+      </label>
       <input type="submit" value="Add Subject">
     </form>
-    <a routerLink="/new-task" routerLinkActive="active">
-      <button type="button" class="add-button">Add Task</button></a>
   </section>
 </section>

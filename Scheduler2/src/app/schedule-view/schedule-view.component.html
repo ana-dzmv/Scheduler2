@@ -5,78 +5,6 @@
       <td *ngFor="let time of time_starts">{{time}}</td>
     </tr>
   </thead>
-  <!--<tbody>
-    <tr>
-      <td class="days">Sun</td>
-      <td class="subject">Subject 1</td>
-      <td class="gap">G A P</td>
-      <td class="gap">G A P</td>
-      <td class="gap">G A P</td>
-      <td class="subject">Subject2</td>
-      <td class="subject">Subject3</td>
-      <td class="subject">Subject4</td>
-    </tr>
-    <tr>
-      <td class="days">Mon</td>
-      <td class="subject">Subject1</td>
-      <td class="gap">G A P</td>
-      <td class="subject">Subject2</td>
-      <td class="subject">Subject3</td>
-      <td class="gap">G A P</td>
-      <td class="gap">G A P</td>
-      <td class="subject">Subject4</td>
-    </tr>
-    <tr>
-      <td class="days">Tue</td>
-      <td class="gap">G A P</td>
-      <td class="subject">Subject2</td>
-      <td class="subject">Subject3</td>
-      <td class="subject">Subject4</td>
-      <td class="subject">Subject1</td>
-      <td class="gap">G A P</td>
-      <td class="gap">G A P</td>
-    </tr>
-    <tr>
-      <td class="days">Wed</td>
-      <td class="subject">Subject1</td>
-      <td class="gap">G A P</td>
-      <td class="subject">Subject2</td>
-      <td class="subject">Subject3</td>
-      <td class="gap">G A P</td>
-      <td class="gap">G A P</td>
-      <td class="subject">Subject4</td>
-    </tr>
-    <tr>
-      <td class="days">Thu</td>
-      <td class="gap">G A P</td>
-      <td class="gap">G A P</td>
-      <td class="gap">G A P</td>
-      <td class="subject">Subject2</td>
-      <td class="subject">Subject3</td>
-      <td class="subject">Subject1</td>
-      <td class="subject">Subject4</td>
-    </tr>
-    <tr>
-      <td class="days">Fri</td>
-      <td class="subject">Subject1</td>
-      <td class="subject">Subject2</td>
-      <td class="subject">Subject3</td>
-      <td class="subject">Subject4</td>
-      <td class="gap">G A P</td>
-      <td class="gap">G A P</td>
-      <td class="gap">G A P</td>
-    </tr>
-    <tr>
-      <td class="days">Sat</td>
-      <td class="subject">Subject1</td>
-      <td class="gap">G A P</td>
-      <td class="gap">G A P</td>
-      <td class="subject">Subject3</td>
-      <td class="gap">G A P</td>
-      <td class="subject">Subject2</td>
-      <td class="subject">Subject4</td>
-    </tr>
-  </tbody>-->
   <tbody>
     <tr *ngFor="let day of weekdays" id="{{day}}">
       <td class="days">{{day}}</td>
@@ -84,8 +12,4 @@
     </tr>
   </tbody>
 </table>
-<button (click)="changeToSubject()">Press here</button>
-
-<!--<ul>
-  <li *ngFor="let s of subjects">{{s.color}}</li>
-</ul>-->
+<button (click)="locateSubjects()">Press here</button>
